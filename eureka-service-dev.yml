@@ -1,0 +1,16 @@
+eureka:
+  server:
+    enable-self-preservation: true
+  instance:
+    hostname: eureka1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+server:
+  port: 10086
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    config: 
+      override-none: true
